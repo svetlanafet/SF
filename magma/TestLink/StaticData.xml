@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<StaticDataList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StaticDataLinks>
+    <StaticDataLink>dbo.a_emp</StaticDataLink>
+    <StaticDataLink>dbo.b_dept</StaticDataLink>
+    <StaticDataLink>dbo.dept</StaticDataLink>
+    <StaticDataLink>dbo.emp</StaticDataLink>
+  </StaticDataLinks>
+</StaticDataList>
