@@ -27,6 +27,33 @@
     <ShowDataPreview>true</ShowDataPreview>
   </Settings>
   <Tables>
+    <Table Name="dbo.b_dept">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="dname">
+          <Checked>false</Checked>
+          <DataType>varchar</DataType>
+          <Length>200</Length>
+        </Column>
+      </Columns>
+    </Table>
     <Table Name="dbo.dept">
       <Checked>true</Checked>
       <Settings>
@@ -83,6 +110,488 @@
           <GeneratorDescription>Marketing, Finance, Research and Development, Manufacturing, Sales, Customer Support, ...</GeneratorDescription>
           <GeneratorCategory>Business</GeneratorCategory>
           <Length>200</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="dbo.t1">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>25</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.CaptureOutputLog">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="Id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="OutputText">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_AssertEqualsTableSchema_Actual">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>256</Length>
+        </Column>
+        <Column Name="RANK(column_id)">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="max_length">
+          <Checked>false</Checked>
+          <DataType>smallint</DataType>
+          <Length>2</Length>
+          <Precision>5</Precision>
+        </Column>
+        <Column Name="precision">
+          <Checked>false</Checked>
+          <DataType>tinyint</DataType>
+          <Length>1</Length>
+          <Precision>3</Precision>
+        </Column>
+        <Column Name="scale">
+          <Checked>false</Checked>
+          <DataType>tinyint</DataType>
+          <Length>1</Length>
+          <Precision>3</Precision>
+        </Column>
+        <Column Name="collation_name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>256</Length>
+        </Column>
+        <Column Name="is_nullable">
+          <Checked>false</Checked>
+          <DataType>bit</DataType>
+          <Length>1</Length>
+          <Precision>1</Precision>
+        </Column>
+        <Column Name="is_identity">
+          <Checked>false</Checked>
+          <DataType>bit</DataType>
+          <Length>1</Length>
+          <Precision>1</Precision>
+        </Column>
+        <Column Name="system_type_id">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="user_type_id">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_AssertEqualsTableSchema_Expected">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>256</Length>
+        </Column>
+        <Column Name="RANK(column_id)">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="max_length">
+          <Checked>false</Checked>
+          <DataType>smallint</DataType>
+          <Length>2</Length>
+          <Precision>5</Precision>
+        </Column>
+        <Column Name="precision">
+          <Checked>false</Checked>
+          <DataType>tinyint</DataType>
+          <Length>1</Length>
+          <Precision>3</Precision>
+        </Column>
+        <Column Name="scale">
+          <Checked>false</Checked>
+          <DataType>tinyint</DataType>
+          <Length>1</Length>
+          <Precision>3</Precision>
+        </Column>
+        <Column Name="collation_name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>256</Length>
+        </Column>
+        <Column Name="is_nullable">
+          <Checked>false</Checked>
+          <DataType>bit</DataType>
+          <Length>1</Length>
+          <Precision>1</Precision>
+        </Column>
+        <Column Name="is_identity">
+          <Checked>false</Checked>
+          <DataType>bit</DataType>
+          <Length>1</Length>
+          <Precision>1</Precision>
+        </Column>
+        <Column Name="system_type_id">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="user_type_id">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_Configurations">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="Name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>100</Length>
+        </Column>
+        <Column Name="Value">
+          <Checked>false</Checked>
+          <DataType>sql_variant</DataType>
+          <Length>8016</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_ExpectException">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="i">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_NewTestClassList">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="ClassName">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>450</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_NullCellTable">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="I">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Private_RenamedObjectLog">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="Id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="ObjectId">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="OriginalName">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.Run_LastExecution">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="SessionId">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="LoginTime">
+          <Checked>false</Checked>
+          <DataType>datetime</DataType>
+          <Scale>3</Scale>
+          <Length>8</Length>
+          <Precision>23</Precision>
+        </Column>
+        <Column Name="TestName">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.TestMessage">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="Msg">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="tSQLt.TestResult">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="Id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="Class">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="TestCase">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="Name">
+          <Checked>false</Checked>
+          <DataType>nvarchar</DataType>
+          <Length>517</Length>
+        </Column>
+        <Column Name="TranName">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="Result">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="Msg">
+          <Checked>false</Checked>
+          <DataType>nvarchar(max)</DataType>
+          <Length>-1</Length>
+        </Column>
+        <Column Name="TestStartTime">
+          <Checked>false</Checked>
+          <DataType>datetime</DataType>
+          <Scale>3</Scale>
+          <Length>8</Length>
+          <Precision>23</Precision>
+        </Column>
+        <Column Name="TestEndTime">
+          <Checked>false</Checked>
+          <DataType>datetime</DataType>
+          <Scale>3</Scale>
+          <Length>8</Length>
+          <Precision>23</Precision>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="dbo.a_emp">
+      <Checked>false</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>10</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="id">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="name">
+          <Checked>false</Checked>
+          <DataType>varchar</DataType>
+          <Length>200</Length>
+        </Column>
+        <Column Name="dept">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <HasForeignKey>true</HasForeignKey>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="c1">
+          <Checked>false</Checked>
+          <DataType>nchar</DataType>
+          <Length>10</Length>
         </Column>
       </Columns>
     </Table>
@@ -169,5 +678,9 @@
       </Columns>
     </Table>
   </Tables>
-  <SynchronizationOptions xsi:type="SqlDataSynchronizationOptions" />
+  <SynchronizationOptions xsi:type="SqlDataSynchronizationOptions">
+    <SynchronizationFileName>D:\Temp\DataGeneration_202011161314.sql</SynchronizationFileName>
+    <BackupPathName>C:\Program Files\Microsoft SQL Server\MSSQL15.SQLLAST\MSSQL\Backup</BackupPathName>
+    <CompareColumnStoreTables>true</CompareColumnStoreTables>
+  </SynchronizationOptions>
 </DataGenDocument>
